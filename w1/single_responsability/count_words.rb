@@ -12,7 +12,7 @@ class Password
 			@text=gets.chomp
 		else 
 			puts "wrong name/password. Please try again"
-			Password
+			Password.new
 		end
 		count_words
 	end
@@ -20,6 +20,7 @@ class Password
 		puts @text.split.size
 	end
 end
+system("clear")
 Password.new
 
 
