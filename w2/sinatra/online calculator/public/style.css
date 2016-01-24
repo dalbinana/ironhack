@@ -1,0 +1,13 @@
+body{
+	background-color: yellow;
+	color:black;
+
+}
+#name {
+	color:green;
+	font-size: 75px;
+}
+
+#logo {
+	width: 400px;
+}

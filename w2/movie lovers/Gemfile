@@ -1,0 +1,18 @@
+source "https://www.rubygems.org"
+
+gem "sinatra"
+
+gem "rack"
+gem "imdb"
+
+group :development do
+	gem "pry"	
+  gem 'guard'
+  gem "guard-rspec"
+  gem "sinatra-reloader"
+end
+
+group :test do
+
+	gem "rack-test"
+end	

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <h1>Please choose the operation</h1>
+  <form action="/operation" method="post">
+    <input type="number" placeholder="First value" name="first_number"> 
+    <input type="number" placeholder="Second value" name="second_number"><br>
+    <button type="submit" value="add" name="calculate">Add</button>
+    <button type="submit" value="multiply" name="calculate">Multiply</button>
+    <button type="submit" value="divide" name="calculate">Divide</button>
+
+
+​
+  </form>
+  <h2><%= @first %> + <%= @second %> = <%= @result %> </h2>
+​
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is your shopping list</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <h1>This is your shopping list</h1>
+  <h2><%= @list_of_items %>
+  <form action="/shopping_list" method="post">
+    <input type="text" name="new_item">
+    <input type="submit" value="Send">
+
+​
+  </form>
+  <p> <%=@text_session %></p>
+  <p> <%= @text_session_data %></p>
+​
+  </body>
+</html>

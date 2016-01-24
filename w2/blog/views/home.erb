@@ -1,0 +1,15 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+<% @listado_sort.each do |posts| %>
+	<li><%= posts.date %> - <a href="/post_details/<%= @listado_sort.index(posts) %>"><%= posts.title %></a></li> 
+	
+<% end %>
+</ul>
+
+</body>
+</html>

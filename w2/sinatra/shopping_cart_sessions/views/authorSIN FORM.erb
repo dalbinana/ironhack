@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is my first Sinatra file</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <h1><%= @hello %></h1>
+  <h2 id="name"> Hello <%= @username %></h2>
+  <h2>Today is <%= @date%></h2>
+  <p> <%= @hours %> ago was <%= @hours_ago %></p>
+
+  <% if @date.monday? %>
+  <h1>Today it's monday</h1>
+  <% else %>
+  <h1>Today it's not monday, that's awesome</h1>
+
+  <% end %>
+  <ul>
+<% @ingredients.each do |ingr| %>
+<li><%= ingr %></li> <% end %>
+</ul>
+<img id="logo" src="/pixies.png"/>
+​
+  </body>
+</html>
+

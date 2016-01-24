@@ -1,21 +1,24 @@
 class Post
 	attr_reader :title, :date, :text, :sponsored
-	def initialize (title,date,text,sponsored="no")
-		@title=title
-		@date=date
-		@text=text
-		@sponsored=sponsored
-		# @total_posts=[]
-		# @total_posts.push
+	def initialize
+		@title=nil
+		@date=nil
+		@text=nil
 	end
-	# def print_posts (item)
-	# 	puts @total_posts
+	def title(title)
+		@title=title
+	end
+	def date(date)
+		@date=date
+	end
+	def text(text)
+		@text=text
+	end			
+end
 
-	# end	
 
 
 
-end	
 
 class Blog
 	def initialize
@@ -54,6 +57,7 @@ class Blog
 	# end
 
 	def pagination
+		system("clear")
 
 		@ordered_posts=[]
 		
@@ -139,14 +143,18 @@ class Blog
 end			
 
 
-post5=Post.new("title5",Time.new,"text5")
-post3=Post.new("title3",Time.new,"text3")
-post1=Post.new("title1",Time.new,"text1")
-post2=Post.new("title2",Time.new,"text2","si")
-post4=Post.new("title4",Time.new,"text4")
-post6=Post.new("title6",Time.new,"text6")
-post7=Post.new("title7",Time.new,"text7")
-post8=Post.new("title8",Time.new,"text8")
+post5=Post.new
+post3=Post.new
+post1=Post.new
+post2=Post.new
+post4=Post.new
+post6=Post.new
+post7=Post.new
+post8=Post.new
+
+post5.title("titulo 5")
+post5.time(Time.new)
+post5.text("tesvsdcvsdc")
 
 blog=Blog.new
 blog.add_post(post1)

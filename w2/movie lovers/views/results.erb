@@ -1,0 +1,16 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>Results for <%= @string_to_search %></h1>
+<% @array_of_posters_home.each do |items| %>
+	<img src="<%= items[1] %>" alt="<%= items[0] %>" height="200">
+	<% end %>
+<h2>Wich of these movies was released in <%= @year %> </h2>
+
+
+</body>
+</html>
