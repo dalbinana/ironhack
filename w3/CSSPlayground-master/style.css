@@ -1,0 +1,25 @@
+.box.blue{
+	background-color: blue; 
+	border: 5px solid red;	
+}
+#red {
+	background-color: red;
+	border: 5px solid blue;
+}
+#top{
+	position: absolute;
+	top:350px;
+	left:350px;
+	background-color: green;
+}
+#bottom{
+	position: absolute;
+	top:400px;
+	left:500px;
+}
+.box{
+	margin:10px;
+}
+h3 {
+	padding: 20% 20%;
+}

@@ -1,0 +1,21 @@
+body {
+	background-image: url(bg.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom;
+	color: white;
+}
+.row {
+	border: 1px solid white;
+}
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+	border: 1px solid white;
+}
+.form-inline.real {
+	display:inline-block;
+	width:auto
+}
+.logo {
+	background-color: 
+}
