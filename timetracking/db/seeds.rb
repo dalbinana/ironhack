@@ -5,10 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Project.create name: 'Ironhack', description: 'Lorem ipsum dolors sit amet...'
-Project.create name: "Time tracking app"
-Project.create name:"Recipies", description:"I want to cook"
-Project.create name: 'Ironhack 2', description: '2 Lorem ipsum dolors sit amet...'
-Project.create name: 'Ironhack 3', description: '3 Lorem ipsum dolors sit amet...'
-Project.create name: 'Ironhack4 ', description: '4 Lorem ipsum dolors sit amet...'
-Project.create name: "Another one without description"
+
+Project.create name: 'Ironhack', description: 'it is a coding school'
+Project.create name: 'Time tracking app'
+Project.create name: 'Recipes', description: 'I want to cook'
+Project.create name: 'Boats'
+Project.create name: 'Football', description: 'Will I win?'
+Project.create name: 'class', description: 'do not forget to come on time'
+Project.create name: 'sleepy', description: 'People are sleepy sometimes'
+Project.create name: 'Smile', description: 'Live, laugh, love'

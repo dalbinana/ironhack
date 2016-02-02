@@ -1,0 +1,13 @@
+<h1>Project:
+<%= @project.name %>
+</h1>
+<% if (@project.description) != nil %>
+<p>
+  Description:
+</p>
+<p>
+  <%= @project.description %>
+</p>
+<% end %>
+
+<!-- <a href="<%= @project.id %>/entries">Entries</a> -->
