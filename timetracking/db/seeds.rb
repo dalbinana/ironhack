@@ -14,3 +14,6 @@ Project.create name: 'Football', description: 'Will I win?'
 Project.create name: 'class', description: 'do not forget to come on time'
 Project.create name: 'sleepy', description: 'People are sleepy sometimes'
 Project.create name: 'Smile', description: 'Live, laugh, love'
+
+Entry.create project_id: 1, hours: 2, minutes: 15, comments: "one entry"
+Entry.create project_id: 1, hours: 1, minutes: 43, comments: "another entry"
