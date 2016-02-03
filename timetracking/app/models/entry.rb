@@ -1,9 +1,8 @@
 class Entry < ActiveRecord::Base
   belongs_to :project
-  validate :hours, presence: true, numericality: true
-  validate :minutes, presence: true, numericality: true
-  validate :date, presence: true
-  validate :project, presence: true
+  validates :hours, presence: true, numericality: true
+  validates :minutes, presence: true, numericality: true
+  validates :date, presence: true
+  validates :project, presence: true
 end
 
-/\A[]
