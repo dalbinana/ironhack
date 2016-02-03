@@ -1,18 +1,9 @@
 Rails.application.routes.draw do
+  get '/:shortlink' => 'links#redirect'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  get '/' => 'site#home'
-  # get '/contact' => 'site#contact'
-  # get '/projects' => 'projects#index'
-  # get '/projects/:id' => 'projects#show'
-  # get 'projects/:project_id/entries' => 'entries#index'
-  # get 'projects/:project_id/entries/new' =>'entries#new'
-
- resources :projects, only: [:index, :show, :new, :create] do  #son les rutes que ees creen per defecte, li especifiquem quines volem
-    resources :entries, only: [:index, :new, :create]
-    end
- end   
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
@@ -65,4 +56,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
+end
