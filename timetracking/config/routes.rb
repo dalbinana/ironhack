@@ -14,6 +14,10 @@ Rails.application.routes.draw do
     end
 
   resources :people   
+  patch '/people/:id/projects' => 'people#associate_project', as: :associate_project
+
+
+
  end  
 
 
