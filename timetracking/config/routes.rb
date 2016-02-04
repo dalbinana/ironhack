@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # get 'projects/:project_id/entries/new' =>'entries#new'
 
  resources :projects, only: [:index, :show, :new, :create] do  #son les rutes que ees creen per defecte, li especifiquem quines volem
-    resources :entries, only: [:index, :new, :create]
+    resources :entries, only: [:index, :new, :create, :edit, :update, :destroy]
     end
  end   
 

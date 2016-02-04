@@ -4,9 +4,15 @@
   <li>
     <%= entry.hours %> hours
     <%= entry.minutes %> minutes -
-    <%= entry.created_at %>
+    <%= entry.date %>
+    <%= link_to("Edit entry", edit_project_entry_path(id: entry, project_id: @project)) %>
+    <%= link_to('Delete', project_entry_path(@project, entry), method: :delete,data: {confirm:'Are you sure?'}) %>  
   </li>
   <% end %>
 </ul>
 
-<h2>Total hours: <%= @project.total_hours_in_month %>
+<h2>Total hours: <%= @project.total_hours_in_month %></h2>
+<%= link_to("See the projects", projects_path) %>
+<%= link_to("Add a project", new_project_entry_path) %>
+
+

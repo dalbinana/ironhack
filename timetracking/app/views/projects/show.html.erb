@@ -10,4 +10,4 @@
 </p>
 <% end %>
 
-<a href="<%= @project.id %>/entries">Entries</a>
+<%= link_to("See the entries", project_entries_path(@project)) %>
