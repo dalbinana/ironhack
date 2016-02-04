@@ -7,13 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/contact">Contact us</a></li>
-    </ul>
-  </nav>
+<%= render 'shared/header' %> 
 <%= flash_message %>
 <%= yield %>
 
