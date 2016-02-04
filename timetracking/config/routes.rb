@@ -12,7 +12,12 @@ Rails.application.routes.draw do
  resources :projects, only: [:index, :show, :new, :create] do  #son les rutes que ees creen per defecte, li especifiquem quines volem
     resources :entries, only: [:index, :new, :create, :edit, :update, :destroy]
     end
- end   
+
+  resources :people   
+ end  
+
+
+
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
