@@ -5,7 +5,7 @@ class PeopleController < ApplicationController
 
 	def show
 		@person=Person.find(params[:id])
-		@available_projects = @person.projects
+		@available_projects = Project.all - @person.projects
 	end	
 
 	def new
