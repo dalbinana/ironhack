@@ -1,5 +1,5 @@
 module ApplicationHelper
-
+	def flash_message
 		if flash[:alert]
       content_tag :div, class: 'message alert' do
         content_tag :p do
@@ -13,6 +13,7 @@ module ApplicationHelper
         end
       end
   end
+end
 end
 # Solucion pijoteras para hacer lo mismo
 #      def flash_message
@@ -28,5 +29,5 @@ end
 #     end    
 
 
-end
+
 
