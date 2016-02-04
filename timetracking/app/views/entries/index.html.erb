@@ -13,7 +13,7 @@
   <% end %>
 </ul>
 
-<h2>Total hours: <%= @project.total_hours_in_month %></h2>
+<h2>Total hours: <%= total_hours_in_month(@entries) %></h2>
 <%= link_to("See the projects", projects_path) %>
 <%= link_to("Add an entry", new_project_entry_path) %>
 

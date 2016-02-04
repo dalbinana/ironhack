@@ -1,9 +1,9 @@
 module EntriesHelper
-	  def total_hours_in_month(month = Date.today.month, year = Date.today.year)
+  def total_hours_in_month(entries, month = Date.today.month, year = Date.today.year)
  		start_date = Date.new(year, month)
  		end_date = Date.new(year, month).end_of_month
- 		entries = self.entries.where("project_id = ? AND created_at >= ? AND created_at <= ?", self.id, start_date, end_date)
- 		entries.reduce(0) do | sum , entry |
+ 		my_entries = entries.where("date >= ? AND date <= ?", start_date, end_date)
+ 		my_entries.reduce(0) do | sum , entry |
  			sum += entry.hours + entry.minutes.to_f/60
  		end
  	end
