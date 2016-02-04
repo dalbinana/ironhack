@@ -1,3 +1,10 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<% if flash[:alarm] %>
+  <%= flash[:alarm] %>
+<% end %>
+
 <h1>Entries for the project: <%= @project.name %></h1>
 <ul>
   <% @entries.each do |entry| %>
@@ -13,6 +20,6 @@
 
 <h2>Total hours: <%= @project.total_hours_in_month %></h2>
 <%= link_to("See the projects", projects_path) %>
-<%= link_to("Add a project", new_project_entry_path) %>
+<%= link_to("Add an entry", new_project_entry_path) %>
 
 

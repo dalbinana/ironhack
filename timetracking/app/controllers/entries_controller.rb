@@ -13,6 +13,7 @@ class EntriesController < ApplicationController
     @project = Project.find params[:project_id]
     @entry = @project.entries.new entry_params
     if @entry.save
+      flash[:notice] = "Entry created successfulluy"
       redirect_to action: 'index', controller:'entries', project_id: @project.id
     else
       render 'new'
@@ -37,6 +38,9 @@ class EntriesController < ApplicationController
     @project = Project.find params[:project_id]
     @entry = @project.entries.find params[:id] 
     @entry.destroy
+    if @entry.destroy
+      flash[:alarm] = "Arrrrggg deleted"
+    end  
     redirect_to project_entries_path(@project)
   end   
 private
