@@ -7,7 +7,7 @@ module ApplicationHelper
   private
   def display_message(type)
     if flash[type]
-      content_tag :div, class: type do
+      content_tag :div, class: type, id: "message" do
         content_tag :p do
           flash[type]
         end
