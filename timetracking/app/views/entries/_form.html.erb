@@ -19,6 +19,12 @@
   <%= f.label :date %>
   <%= f.date_field :date, size: 4 %>
   <br>
+  
+
+  <% if @views == 'new'  %>
+  <%= f.submit 'Just to test if i can pass the view name in a Partial' %>
+  <% end %>  
+
   <%= f.submit 'Save' %>
 <% end %>   
 <%= link_to("Cancel", project_entries_path(@project)) %>
