@@ -1,0 +1,8 @@
+<h1>Concert</h1>
+<ul>
+<% @concerts.each do |concert| %>
+  <li><%= link_to(concert.artist, concert_path(concert)) %> - <%= concert.date.strftime('%a %d %b') %>
+  </li>
+<% end %>
+</ul>
+<%= render 'sidebar' %>

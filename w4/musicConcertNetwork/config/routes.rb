@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+  get '/' => 'concerts#index'
+  resources :concerts do
+    resources :comments, only: [:index, :new, :create, :destroy]
+  end
+
+  # get '/admin' => 'concerts#new'
+  # resources :concerts do
+  #   resources :comments, only: [:index, :new, :create, :destroy]
+  # end
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,7 @@
+<h3>Concerts of this month</h3>
+<ul>
+<% @concerts_this_month.each do |concert| %>
+  <li><%= link_to(concert.artist, concert_path(concert)) %> - <%= concert.date.strftime('%a %d %b') %>
+  </li>
+<% end %>
+</ul>

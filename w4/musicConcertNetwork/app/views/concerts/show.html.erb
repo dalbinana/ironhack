@@ -1,0 +1,19 @@
+<h1>Ficha</h1>
+<ul>
+  
+  <li><%= @concert.artist %></li>
+  <li><%= @concert.venue %></li>
+  <li><%= @concert.city %></li>
+  <li><%= @concert.date %></li>
+  <li><%= @concert.price %></li>
+  <li><%= @concert.description %></li>
+ 
+</ul>
+<h2>Comments</h2>
+<ul>
+  <% @comments.each do |comment| %>
+  <li>
+    <%= comment.textComment %> created at <%= comment.created_at %> 
+  </li>
+  <% end %>
+</ul>
