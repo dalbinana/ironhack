@@ -1,0 +1,13 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
+Concert.create artist:'Cola Jet Set', venue:"Apolo", city:"Barcelona", date:"21-02-2016", price:"10", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum quisquam nihil temporibus asperiores voluptatem voluptate, possimus sunt corrupti, debitis tenetur repellat, beatae sed, quod quasi voluptas cumque illo quo."
+Concert.create artist:'Cola Jet Set', venue:"Sidecar", city:"Barcelona", date:"20-02-2016", price:"15", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum quisquam nihil temporibus asperiores voluptatem voluptate, possimus sunt corrupti, debitis tenetur repellat, beatae sed, quod quasi voluptas cumque illo quo.</div>"
+Concert.create artist:'La Casa Azul', venue:"Apolo", city:"Barcelona", date:"19-02-2016", price:"10", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum quisquam nihil temporibus asperiores voluptatem voluptate, possimus sunt corrupti, debitis tenetur repellat, beatae sed, quod quasi voluptas cumque illo quo.</div>"
+Concert.create artist:'Papa Topo', venue:"Apolo", city:"Madrid", date:"21-02-2016", price:"10", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum quisquam nihil temporibus asperiores voluptatem voluptate, possimus sunt corrupti, debitis tenetur repellat, beatae sed, quod quasi voluptas cumque illo quo.</div>"
+Concert.create artist:'Pulp', venue:"Sant Jordi", city:"Barcelona", date:"18-02-2016", price:"19", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum quisquam nihil temporibus asperiores voluptatem voluptate, possimus sunt corrupti, debitis tenetur repellat, beatae sed, quod quasi voluptas cumque illo quo.</div>"
+Concert.create artist:'Los Planetas', venue:"Lata de Bombillas", city:"Zaragoza", date:"18-02-2016", price:"12", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum quisquam nihil temporibus asperiores voluptatem voluptate, possimus sunt corrupti, debitis tenetur repellat, beatae sed, quod quasi voluptas cumque illo quo.</div>"
